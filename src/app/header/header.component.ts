@@ -26,6 +26,10 @@ import { Component } from '@angular/core';
             Contact
           </a>
 
+          <a class="navbar-item" routerLink="/video">
+            Video
+          </a>
+
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
               More
