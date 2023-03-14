@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 const script = document.createElement('script');
-script.src = 'https://scriptstaging.cookieyes.com/client_data/39cf18ec2729793773cdf4e1/script.js';
+script.src = 'https://scriptstaging.cookieyes.com/client_data/39cf18ec2729793773cdf4e1/client.js';
 script.setAttribute('data-cookieyes', 'ignore');
 document.head.appendChild(script);
 
