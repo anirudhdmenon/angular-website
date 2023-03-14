@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 
+const script = document.createElement('script');
+script.src = 'https://cdn.cookieyes.com/client.js';
+script.setAttribute('data-cookieyes', 'ignore');
+document.head.appendChild(script);
+
 @Component({
   selector: 'app-home',
   template: `
@@ -11,6 +16,7 @@ import { Component } from '@angular/core';
       </div>
   </section>
   `,
+
   styles: [`
     .video-container {
       position: relative;
@@ -28,6 +34,7 @@ import { Component } from '@angular/core';
     }
     `]
 })
+
 export class VideoComponent {
 
 }
