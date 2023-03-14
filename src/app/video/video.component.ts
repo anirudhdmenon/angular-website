@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CookiePreferencesService } from '../cookie-preferences.service';
 
 const script = document.createElement('script');
 script.src = 'https://scriptstaging.cookieyes.com/client_data/39cf18ec2729793773cdf4e1/client.js';
@@ -36,5 +37,19 @@ document.head.appendChild(script);
 })
 
 export class VideoComponent {
+
+  preferences: any;
+
+  constructor(private cookiePreferencesService: CookiePreferencesService) {
+    this.preferences = JSON.parse(localStorage.getItem('cookiePreferences'));
+  }
+
+  playVideo() {
+    if (this.preferences && this.preferences.functional) {
+      // Play video
+    } else {
+      // Show message saying that cookies are required to play the video
+    }
+  }
 
 }
