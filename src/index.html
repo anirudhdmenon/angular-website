@@ -7,25 +7,6 @@
    src="https://scriptstaging.cookieyes.com/client_data/39cf18ec2729793773cdf4e1/script.js">
    </script> 
    <!-- End cookieyes banner -->
-   <script>
-    window.addEventListener('CY_ACCEPT', function(event) {
-      var preferences = {
-        analytics: event.detail.analytics,
-        advertising: event.detail.advertising,
-        functional: event.detail.functional
-      };
-      cookiePreferencesService.setPreferences(preferences);
-    });
-  
-    window.addEventListener('CY_REJECT', function() {
-      var preferences = {
-        analytics: false,
-        advertising: false,
-        functional: false
-      };
-      cookiePreferencesService.setPreferences(preferences);
-    });
-  </script>
   
   <title>AngularWebsite</title>
   <base href="/">
