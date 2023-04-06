@@ -30,7 +30,7 @@ import { Component } from '@angular/core';
             Video
           </a>
 
-          <a class="navbar-item cky-banner-element">
+          <a href="#" class="navbar-item cky-banner-element">
             Cookies
           </a>
 
