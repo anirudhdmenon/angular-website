@@ -30,6 +30,10 @@ import { Component } from '@angular/core';
             Video
           </a>
 
+          <a class="navbar-item cky-banner-element" routerLink="/video">
+            Cookies
+          </a>
+
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
               More
